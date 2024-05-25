@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="160dp"
+    android:layout_height="300dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="2dp"
+    app:cardElevation="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:background="#FCF6F5">
+        
+        <ImageView
+            android:id="@+id/location_image"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:src="@drawable/laksahay"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/location_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/baloo"
+            android:text="LAKSHADWEEP"
+            android:textSize="19sp"
+            android:layout_marginTop="5dp"
+            android:textAllCaps="true"/>
+        
+        <RatingBar
+            android:id="@+id/location_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:rating="4.5"
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/location_about"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Lakshadweep is best location in india for tourist."/>
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>
